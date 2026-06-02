@@ -5,12 +5,12 @@ html{
 /* Header */
 header{
     background-color: green;
-    height: 8vw;
+    height: 4rem;
     display: flex;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1.5rem; 
     color:white ;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 a{
@@ -30,6 +30,8 @@ a{
     background-color: white;
     border: 2px solid green;
     border-radius: 10px;
+    position: relative;
+    z-index: 100;
 }
 
 .pop-up-bg {
