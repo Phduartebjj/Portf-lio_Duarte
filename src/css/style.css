@@ -1,0 +1,51 @@
+html{
+    font-size: 62.5%;
+}
+
+/* Header */
+header{
+    background-color: green;
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    color:white ;
+    justify-content: space-around;
+}
+
+a{
+    color: white;
+}
+
+/* Features */
+
+.pop-up{
+    font-size: 16px;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+
+.pop-up-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(142, 142, 142, 0.5);
+    opacity: 100%;
+    width: 100%;
+    height: 100vh;
+    position: fixed ;
+    display: none;
+    top: 0px;
+    left: 0px;
+}
+
+.open {
+    display: flex;
+}
