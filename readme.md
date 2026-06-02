@@ -29,6 +29,8 @@ O projeto foi desenvolvido para praticar JavaScript, Integração com APIs, e l�
 - Salvamento de dados no LocalStorage.
 - Exibir total de gastos e quantidade de produtos comprados.
 
+---
+
 ## US About the project 
 It's a spending simulator, where the user selects an initial amount and adds products to see how much money lefg.
 
