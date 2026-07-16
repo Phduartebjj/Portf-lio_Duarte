@@ -1,10 +1,12 @@
 :root {
+  --bg-hero: #1e2734;
   --bg-primary: #1b1e23;
   --bg-secondary: #232730;
 
   --font-size-title: 4.8rem;
   --font-size-subtitle: 3.2rem;
   --font-size-text: 2.4rem;
+  --font-size-smtext:1.6rem;
 
   --text-primary: #ebd7bf;
   --text-secondary: #fff3e6;
@@ -21,5 +23,5 @@
   --icon-size: 4.8rem;
 
   --font-primary: "Archivo Black", sans-serif;
-  --font-code: "Courier Prime", monospace;
+  --font-code: "Courier Prime";
 }

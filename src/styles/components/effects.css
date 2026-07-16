@@ -1,0 +1,21 @@
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    var(--accent) 45%,
+    rgb(235, 215, 191) 50%,
+    var(--accent) 65%
+  );
+  background-size: 200% 100%;
+  background-position: 0% 0;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer-text 4s infinite linear;
+}
+
+@keyframes shimmer-text {
+  to {
+    background-position: -200% 0;
+  }
+}
