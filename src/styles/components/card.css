@@ -1,0 +1,12 @@
+.meatball{
+    display: flex;
+    gap: 0.8rem;
+}
+
+.point{
+    width: 1rem;
+    height: 1rem;
+
+    background-color: whitesmoke;
+    border-radius: 50%;
+}
