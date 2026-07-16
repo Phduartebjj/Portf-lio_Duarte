@@ -1,0 +1,27 @@
+body{
+    background: var(--bg-primary);
+    color: var(--text-primary);
+
+    font-family: var(--font-code);
+
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+h1,h2,h3{
+    font-family: var(--font-code);
+    text-transform: uppercase;
+}
+
+p,span{
+    font-family: var(--font-code);
+}
