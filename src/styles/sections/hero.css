@@ -86,8 +86,8 @@
 .hero-image {
   position: absolute;
   z-index: 0;
-  bottom: -10px;
-  width: 70rem;
+  bottom: clamp(0rem,1vw,-1rem);
+  width: clamp(50rem,60vw,70rem);
 }
 
 
