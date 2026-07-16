@@ -25,3 +25,9 @@
   font-weight: 700;
   font-style: italic;
 }
+
+@font-face {
+  font-family: "Archivo Black";
+  src: url(/src/assets/fonts/Archivo_Black/ArchivoBlack-Regular.ttf) format("truetype");
+  font-style: normal;
+}
