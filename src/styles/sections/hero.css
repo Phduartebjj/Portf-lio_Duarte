@@ -66,6 +66,8 @@
     0 0 15px var(--accent),
     0 0 30px var(--accent),
     0 0 50px var(--accent);
+
+   
 }
 
 .hero-background {
@@ -80,14 +82,40 @@
   left: 50%;
 
   transform: translate(-50%, -50%) scaleY(clamp(5, 5, 6));
-  opacity: 0.02;
+  opacity: 0.15;
 }
 
-.hero-image {
+.hero-image { 
   position: absolute;
   z-index: 0;
   bottom: clamp(0rem,1vw,-1rem);
   width: clamp(50rem,60vw,70rem);
 }
 
+.hero-image::before{
+  position: absolute;
+  display: inline-block;
+  content: '';
+  background-image: url(/src/assets/images/image-removebg-preview\ 1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 80rem;
+  height: 80rem;
+  top: -5rem;
+  left: -5rem;
+  z-index: -1;
+}
+.hero-image::after{
+  position: absolute;
+  display: inline-block;
+  content: '';
+  background-image: url(/src/assets/images/image-removebg-preview\ 1\ \(1\).png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 72rem;
+  height: 72rem;
+  top: -0.8rem;
+  left: -1rem;
+  z-index: -1;
+}
 
