@@ -8,7 +8,7 @@
 .hero-footer-content {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(52, 137, 248, 0.3);
+  background-color: #3489f84d;
   width: 100%;
   height: 30%;
   align-items: center;
