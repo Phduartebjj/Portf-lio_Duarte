@@ -47,11 +47,6 @@
   font-size: clamp(var(--font-size-smtext), 3vw, var(--font-size-text));
   font-style: normal;
   gap: 2rem;
-  text-shadow:
-    0 0 5px var(--accent),
-    0 0 15px var(--accent),
-    0 0 30px var(--accent),
-    0 0 50px var(--accent);
 }
 
 .hero-description {
@@ -61,13 +56,6 @@
   gap: 2rem;
   font-size: clamp(var(--font-size-smtext), 2vw, var(--font-size-text));
 
-  text-shadow:
-    0 0 5px var(--accent),
-    0 0 15px var(--accent),
-    0 0 30px var(--accent),
-    0 0 50px var(--accent);
-
-   
 }
 
 .hero-background {
