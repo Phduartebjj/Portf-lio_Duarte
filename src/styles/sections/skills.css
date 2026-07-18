@@ -11,6 +11,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: clamp(1rem, 2vw, 3rem);
+  
 }
 
 .skills-card {

@@ -9,6 +9,8 @@
   --font-size-subtitle: 3.2rem;
   --font-size-text: 2.4rem;
   --font-size-smtext: 1.6rem;
+  --font-size-responsive: clamp(var(--font-size-smtext), 2vw, var(--font-size-text));
+
 
   --text-primary: #ebd7bf;
   --text-secondary: #fff3e6;

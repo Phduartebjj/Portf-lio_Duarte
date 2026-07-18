@@ -1,8 +1,14 @@
 .footer {
-  font-size: var(--font-size-smtext);
+  font-size: var(--font-size-responsive);
   position: absolute;
   bottom: 7%;
   left: 2%;
+}
+
+.skills-footer.footer{
+  position: relative;
+  display: block;
+  width: 100%;
 }
 
 .hero-footer-content {
@@ -13,6 +19,10 @@
   height: 30%;
   align-items: center;
   padding: 1rem 5%;
+
+  p{
+    font-size: var(--font-size-smtext );
+  }
 }
 
 .footer.hero-footer {
