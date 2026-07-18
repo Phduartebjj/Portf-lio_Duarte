@@ -18,12 +18,12 @@
   position: absolute;
   top: 3rem;
   left: 3rem;
-  font-size: var(--font-size-text);
+  font-size: clamp(var(--font-size-smtext),2vw,var(--font-size-text));
 }
 
 .profile-load {
   position: absolute;
-  font-size: var(--font-size-text);
+  font-size: clamp(var(--font-size-smtext),2vw,var(--font-size-text));
   top: 7%;
   left: 50%;
   transform: translateX(-50%);
@@ -39,9 +39,8 @@
 .hero-info {
   display: flex;
   flex-direction: column;
-  max-width: 420px;
-  font-weight: 400;
-  font-size: clamp(var(--font-size-smtext), 3vw, var(--font-size-text));
+  width: clamp(15rem,2vw,30rem);
+  font-size: clamp(var(--font-size-smtext), 2vw, var(--font-size-text));
   font-style: normal;
   gap: 2rem;
 
@@ -50,10 +49,9 @@
 .hero-description {
   display: flex;
   flex-direction: column;
-  max-width: 32rem;
+  width: clamp(15rem,2vw,30rem);
   gap: 2rem;
   font-size: clamp(var(--font-size-smtext), 2vw, var(--font-size-text));
-
 }
 
 .hero-background {
@@ -74,23 +72,23 @@
   position: absolute;
   z-index: 0;
   bottom: clamp(0rem, 1vw, -1rem);
-  width: clamp(50rem,55vw, 70rem);
+  width: clamp(30rem,55vw, 60rem);
 }
 
-.hero-image::before {
+/* .hero-image::before {
   position: absolute;
   display: inline-block;
   content: '';
   background-image: url(/src/assets/images/image-removebg-preview\ 1.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 80rem;
-  height: 80rem;
+  width: clamp(50rem,55vw, 80rem);
+  height: clamp(50rem,55vw, 80rem);
   top: -5rem;
   left: -5rem;
   z-index: -1;
-}
-
+} */
+/* 
 .hero-image::after {
   position: absolute;
   display: inline-block;
@@ -98,9 +96,9 @@
   background-image: url(/src/assets/images/image-removebg-preview\ 1\ \(1\).png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 72rem;
-  height: 72rem;
+  width: clamp(42rem,55vw, 72rem);
+  height: clamp(42rem,55vw, 72rem);
   top: -0.8rem;
   left: -1rem;
   z-index: -1;
-}
+} */

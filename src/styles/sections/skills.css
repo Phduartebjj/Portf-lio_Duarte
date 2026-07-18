@@ -18,7 +18,7 @@
   flex-direction: column;
   background-color: rgba(58, 85, 120, 0.1);
   border-radius: 20px;
-  width: 50rem;
+  width: clamp(30rem,50vw,50rem);
   height: 30rem;
   box-shadow:
     0 0 5px var(--accent),
@@ -44,6 +44,7 @@
 }
 
 .section-title {
+  margin-top: 10rem;
   text-align: center;
-  font-size: var(--font-size-subtitle);
+  font-size: clamp(var(--font-size-smtext),5vw,var(--font-size-subtitle));
 }

@@ -1,0 +1,32 @@
+.contact-interface{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(58, 85, 120, 0.1);
+    border-radius: 20px;
+    width: clamp(30rem,50vw,50rem);
+    height: clamp(20rem,60vw,35rem);
+    box-shadow:
+        0 0 5px var(--accent),
+        0 0 15px var(--accent),
+        0 0 30px var(--accent),
+        0 0 50px var(--accent);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.card-content.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    width: 100%;
+    font-size: var(--font-size-smtext);
+}
