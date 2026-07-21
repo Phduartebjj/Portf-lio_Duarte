@@ -1,5 +1,38 @@
-@media(max-width: 480px){
+@media(max-width: 600px){
     .hero-image{
         top: 60%  ;
     }
+
+    .projects-content{
+        flex-direction: column;
+    }
+
+    .projects-footer{
+        p{
+
+            position: absolute;
+            bottom: -8rem;
+        }
+    }
+
+    .hero-system{
+        span{
+            position: absolute;
+            top: -2rem;
+        }
+    }
+
+    .projects-tree{
+        order: 1;
+    }
+
+    .projects-content{
+        align-items: center;
+    }
+
+    .skills-container .skills-card{
+        height: auto;
+    }
+
 }
+

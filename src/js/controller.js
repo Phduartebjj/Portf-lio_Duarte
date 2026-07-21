@@ -18,6 +18,5 @@ projectsThree.forEach((branch) => {
 
 export function initPortfolio() {
   portfolioProjects();
-
   showProjects(projectsThree, getProjects());
 }

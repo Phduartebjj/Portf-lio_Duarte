@@ -5,25 +5,30 @@
   background-color: #1b1e23;
 
   background-image:
-    radial-gradient(100% 60% at bottom,
+    radial-gradient(
+      100% 60% at bottom,
       rgba(43, 123, 227, 0.2) 0%,
-      rgba(27, 30, 35, 0) 80%),
-    radial-gradient(circle at 50% 50%,
+      rgba(27, 30, 35, 0) 80%
+    ),
+    radial-gradient(
+      circle at 50% 50%,
       rgba(29, 43, 61, 1) 0%,
-      rgba(27, 30, 35, 0) 60%);
+      rgba(27, 30, 35, 0) 60%
+    );
   background-repeat: no-repeat;
 }
 
 .hero-system {
+ 
   position: absolute;
   top: 3rem;
   left: 3rem;
-  font-size: clamp(var(--font-size-smtext),2vw,var(--font-size-text));
+  font-size: clamp(1.2rem, 2vw, var(--font-size-smtext));
 }
 
 .profile-load {
   position: absolute;
-  font-size: clamp(var(--font-size-smtext),2vw,var(--font-size-text));
+  font-size: clamp(1.2rem, 2vw, var(--font-size-smtext));
   top: 7%;
   left: 50%;
   transform: translateX(-50%);
@@ -39,17 +44,16 @@
 .hero-info {
   display: flex;
   flex-direction: column;
-  width: clamp(15rem,2vw,30rem);
+  width: clamp(15rem, 2vw, 30rem);
   font-size: clamp(var(--font-size-smtext), 2vw, var(--font-size-text));
   font-style: normal;
   gap: 2rem;
-
 }
 
 .hero-description {
   display: flex;
   flex-direction: column;
-  width: clamp(15rem,2vw,30rem);
+  width: clamp(15rem, 2vw, 30rem);
   gap: 2rem;
   font-size: clamp(var(--font-size-smtext), 2vw, var(--font-size-text));
 }
@@ -64,15 +68,15 @@
   top: 50%;
   left: 50%;
 
-  transform: translate(-50%, -50%) scaleY(clamp(5, 5, 6));
+  transform: translate(-50%, -50%) scaleY(clamp(3, 4.5, 5));
   opacity: 0.15;
 }
 
 .hero-image {
   position: absolute;
   z-index: 0;
-  bottom: clamp(0rem, 1vw, -1rem);
-  width: clamp(30rem,55vw, 60rem);
+  bottom: -8rem;
+  width: clamp(30rem, 55vw, 60rem);
 }
 
 /* .hero-image::before {

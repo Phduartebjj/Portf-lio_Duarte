@@ -2,7 +2,13 @@
   display: flex;
   flex-direction: column;
   gap: 10rem;
-  background: radial-gradient(circle at 50% 50%, rgba(43, 123, 227, 0.1) 0%, rgba(43, 123, 227, 0) 70%), #1b1e23;
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(43, 123, 227, 0.1) 0%,
+      rgba(43, 123, 227, 0) 70%
+    ),
+    #1b1e23;
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -11,7 +17,6 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: clamp(1rem, 2vw, 3rem);
-  
 }
 
 .skills-card {
@@ -19,8 +24,8 @@
   flex-direction: column;
   background-color: rgba(58, 85, 120, 0.1);
   border-radius: 20px;
-  width: clamp(30rem,50vw,50rem);
-  height: 30rem;
+  width: clamp(30rem, 50vw, 50rem);
+  height:30rem;
   box-shadow:
     0 0 5px var(--accent),
     0 0 15px var(--accent),
@@ -47,5 +52,5 @@
 .section-title {
   margin-top: 10rem;
   text-align: center;
-  font-size: clamp(var(--font-size-smtext),5vw,var(--font-size-subtitle));
+  font-size: clamp(var(--font-size-smtext), 5vw, var(--font-size-subtitle));
 }
