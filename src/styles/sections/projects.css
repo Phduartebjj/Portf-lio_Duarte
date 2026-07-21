@@ -1,25 +1,25 @@
-.projects-interface{
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.projects-interface {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.projects-content{
-    display: flex;
-    justify-content: space-around;
-    height: 100%;
+.projects-content {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
 }
 
-.projects-tree ul{
- display: flex;
- flex-direction: column;
- gap: 2rem;
- font-size: var(--font-size-responsive);
+.projects-tree ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: var(--font-size-responsive);
 }
 
-.projects-tree ul li:hover{
-      text-shadow:
+.projects-tree ul li:hover {
+  text-shadow:
     0 0 4px #fff,
     0 0 10px var(--accent),
     0 0 20px var(--accent),
@@ -27,23 +27,56 @@
     0 0 80px var(--accent),
     0 0 120px var(--accent),
     0 0 160px var(--accent);
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.projects-details{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10rem;
+.projects-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10rem;
 }
 
-.project-info{
-      display: flex;
-    flex-direction: column;
-        gap: 1rem;
+.project-info {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: var(--font-size-smtext);
 }
 
-.project-image{
-    width: 32rem;
+.project-image {
+  width: 32rem;
+  height: 20rem;
+  position: relative;
+}
+.project-photo {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
 }
 
+.project-description {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.project-photo:hover {
+  filter: brightness(0.5);
+  cursor: pointer;
+}
+
+.project-photo:hover ~ .project-description {
+  opacity: 1;
+  z-index: 3;
+  font-size: var(--font-size-smtext);
+  padding: 3rem 2rem 0rem 2rem;
+  text-align: center;
+}
