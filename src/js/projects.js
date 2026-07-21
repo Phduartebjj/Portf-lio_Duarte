@@ -52,7 +52,7 @@ function portfolioProjects() {
       "Advice",
       "pwa",
       "./src/assets/projects-img/imagem-advice.png",
-      "HTML CSS JS",
+      "HTML, CSS, JS",
       Descriptions[0].project1,
       gitUrl[0].project1
     ),

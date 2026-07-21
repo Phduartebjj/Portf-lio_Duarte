@@ -3,7 +3,6 @@ import { getProjects, portfolioProjects } from "./projects.js";
 
 const projectsThree = Array.from(document.querySelectorAll(".project"));
 
-
 export function initPortfolio() {
   portfolioProjects();
   showProjects(projectsThree, getProjects());
