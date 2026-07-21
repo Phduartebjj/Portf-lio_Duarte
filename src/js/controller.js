@@ -11,7 +11,9 @@ messageBox.addEventListener("keydown", (e) => {
 
 projectsThree.forEach((branch) => {
   branch.addEventListener("click", (e) => {
-    let projectFind = getProjects().find((p) => p.fullName === branch.textContent);
+    let projectFind = getProjects().find(
+      (p) => p.fullName === branch.textContent,
+    );
     updateProjectDetails(projectFind);
   });
 });

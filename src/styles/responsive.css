@@ -1,37 +1,56 @@
-@media(max-width: 768px){
-    .hero-image{
-        top: 60%  ;
-    }
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: auto;
+    place-items: end center;
+  }
 
-    .projects-content{
-        flex-direction: column;
-    }
+  .hero-image {
+    order: 1;
+  }
 
-    .projects-footer{
-        p{
-            position: absolute;
-            bottom: 0rem;
-        }
-    }
+  .footer.hero-footer {
+    bottom: 0%;
+    height: auto;
+  }
+  .hero-footer-content {
+    padding: 0.35rem 5%;
+  }
 
-    .hero-system{
-        span{
-            position: absolute;
-            top: -2rem;
-        }
-    }
+  .hero-info {
+    order: 0;
+  }
 
-    .projects-tree{
-        order: 1;
-    }
+  .hero-description {
+    order: 0;
+  }
 
-    .projects-content{
-        align-items: center;
-    }
+  .projects-content {
+    flex-direction: column;
+  }
 
-    .skills-container .skills-card{
-        height: auto;
+  .projects-footer {
+    p {
+      position: absolute;
+      bottom: 0rem;
     }
+  }
 
+  .hero-system {
+    span {
+      position: absolute;
+      top: -2rem;
+    }
+  }
+
+  .projects-tree {
+    order: 1;
+  }
+
+  .projects-content {
+    align-items: center;
+  }
+
+  .skills-container .skills-card {
+    height: auto;
+  }
 }
-

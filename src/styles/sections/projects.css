@@ -1,3 +1,7 @@
+#projects {
+  max-width: 1440px;
+}
+
 .projects-interface {
   min-height: 100%;
   display: flex;

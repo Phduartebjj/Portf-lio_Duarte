@@ -1,32 +1,39 @@
-body{
-    background: var(--bg-primary);
-    color: var(--text-primary);
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
 
-    font-family: var(--font-code);
+  font-family: var(--font-code);
 
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
-html{
-    font-size: 62.5%;
-    min-width: 100vw;
+html {
+  font-size: 62.5%;
+  min-width: 100vw;
 }
 
 main {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
-section{
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
+section {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
 }
 
-h1,h2,h3{
-    font-family: var(--font-code);
-    text-transform: uppercase;
+h1,
+h2,
+h3 {
+  font-family: var(--font-code);
+  text-transform: uppercase;
 }
 
-p,span{
-    font-family: var(--font-code);
+p,
+span {
+  font-family: var(--font-code);
 }

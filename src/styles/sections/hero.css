@@ -1,6 +1,7 @@
 #hero {
   overflow: hidden;
   position: relative;
+  max-width: 1440px;
   height: 100vh;
   background-color: #1b1e23;
 
@@ -19,7 +20,6 @@
 }
 
 .hero-system {
- 
   position: absolute;
   top: 3rem;
   left: 3rem;
@@ -35,16 +35,17 @@
 }
 
 .hero-content {
-  display: flex;
-  align-items: center;
-  height: 90%;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  place-items: center ;
+  height: 100%;
+  width: 100%;
 }
 
 .hero-info {
   display: flex;
   flex-direction: column;
-  width: clamp(15rem, 2vw, 30rem);
+  width: clamp(15rem, 20vw, 30rem);
   font-size: clamp(var(--font-size-smtext), 2vw, var(--font-size-text));
   font-style: normal;
   gap: 2rem;
@@ -53,32 +54,23 @@
 .hero-description {
   display: flex;
   flex-direction: column;
-  width: clamp(15rem, 2vw, 30rem);
+  width: clamp(15rem, 20vw, 30rem);
   gap: 2rem;
   font-size: clamp(var(--font-size-smtext), 2vw, var(--font-size-text));
 }
 
-.hero-background {
-  position: absolute;
-  z-index: 0;
-  font-family: var(--font-primary);
-  font-size: 15vw;
-  line-height: 1;
-
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, -50%) scaleY(clamp(3, 4.5, 5));
-  opacity: 0.15;
-}
-
 .hero-image {
-  position: absolute;
-  z-index: 0;
-  bottom: -8rem;
-  width: clamp(30rem, 55vw, 60rem);
+  align-self: end;
+  width: clamp(35rem, 45vw, 40rem);
+  display: flex;
+  justify-content: flex-end;
 }
 
+.hero-image img {
+  display: inline;
+  width: auto;
+  height: auto;
+}
 /* .hero-image::before {
   position: absolute;
   display: inline-block;

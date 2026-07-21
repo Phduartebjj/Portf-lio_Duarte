@@ -1,3 +1,8 @@
+#contact{
+  max-width: 1440px;
+
+}
+
 .contact-interface {
   display: flex;
   flex-direction: column;
