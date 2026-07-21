@@ -9,9 +9,8 @@
 
     .projects-footer{
         p{
-
             position: absolute;
-            bottom: -8rem;
+            bottom: 0rem;
         }
     }
 

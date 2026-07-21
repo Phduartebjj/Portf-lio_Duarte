@@ -1,5 +1,5 @@
 import { showProjects, updateProjectDetails } from "./ui.js";
-import { getProjects, portfolioProjects } from "./projects.js";
+import { getProjects } from "./projects.js";
 import { contactMessage } from "./contact.js";
 
 const projectsThree = Array.from(document.querySelectorAll(".project"));
@@ -11,12 +11,11 @@ messageBox.addEventListener("keydown", (e) => {
 
 projectsThree.forEach((branch) => {
   branch.addEventListener("click", (e) => {
-    let projectFind = getProjects().find((p) => p.name === branch.textContent);
+    let projectFind = getProjects().find((p) => p.fullName === branch.textContent);
     updateProjectDetails(projectFind);
   });
 });
 
 export function initPortfolio() {
-  portfolioProjects();
   showProjects(projectsThree, getProjects());
 }

@@ -9,23 +9,21 @@ function showProjects(projectsThree, projectsList) {
     const freeSlot = projectsThree.find((branch) => !isFill(branch));
 
     if (freeSlot) {
-      freeSlot.textContent = project.name;
+      freeSlot.textContent = project.fullName;
     }
   });
 }
 
 function updateProjectDetails(project) {
   const projectInfos = document.querySelector(".project-info");
-  const paragraphsInfos = projectInfos.querySelectorAll("p");
-  const projectImg = document.getElementById("project-photo")
-  const projectDescription = document.getElementById("project-description")
-  const projectGit = document.getElementById("project-git")
-  
+  const paragraphsInfos = projectInfos.querySelectorAll("li");
+  const projectImg = document.getElementById("project-photo");
+  const projectDescription = document.getElementById("project-description");
+  const projectGit = document.getElementById("project-git");
 
-  projectImg.src = `${project.img}`
-  projectGit.href = `${project.git}`
-  projectDescription.textContent = `${project.description}`
-
+  projectImg.src = project.img;
+  projectGit.href = project.git;
+  projectDescription.textContent = project.description;
   paragraphsInfos[0].textContent = `>PATH: ${project.path}`;
   paragraphsInfos[1].textContent = `>STACK: ${project.stack}`;
 }
