@@ -3,9 +3,12 @@ let projectsList = [];
 const Descriptions = [
   {
     project1:
-      "Um gerador de conselhos aleátorios com PWA integrado com duas API, uma geradora de conselhos e outra de tradução",
+      "PWA Gerador de Conselhos Multi-idioma: Aplicação instalável que gera e traduz conselhos em tempo real (PT/ES) integrando duas APIs. Possui modo claro/escuro, layout responsivo e suporte offline.",
   },
-  { project2: "Meu portfólio com three.js e gsap" },
+  {
+    project2:
+      "Portfólio Criativo e Interativo: Meu portfólio pessoal focado em proporcionar uma experiência imersiva. Construído com HTML, CSS e JavaScript puro, ele utiliza Three.js para renderização 3D e GSAP para animações de alta performance.",
+  },
 ];
 
 const gitUrl = [
@@ -51,20 +54,20 @@ function portfolioProjects() {
     createProject(
       "Advice",
       "pwa",
-      "./src/assets/projects-img/imagem-advice.png",
+      "https://app-gerador-de-conselhos-interface.vercel.app/",
       "HTML, CSS, JS",
       Descriptions[0].project1,
-      gitUrl[0].project1
+      gitUrl[0].project1,
     ),
   );
   addProject(
     createProject(
       "Portfolio",
       "duarte",
-      "./src/assets/projects-img/imagem-portfólio.PNG",
+      "https://phduartebjj.github.io/Portf-lio_Duarte/",
       "HTML, CSS, JS",
       Descriptions[1].project2,
-      gitUrl[1].project2
+      gitUrl[1].project2,
     ),
   );
 }
