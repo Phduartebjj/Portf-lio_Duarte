@@ -3,7 +3,7 @@ function isFill(p) {
 }
 
 function haveAProject(array, projectName) {
-  return array.some((e) => e.textContent.trim() === projectName);
+  return array.some((e) => e.textContent.includes(projectName));
 }
 
 export { isFill, haveAProject };

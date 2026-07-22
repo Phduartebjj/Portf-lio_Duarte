@@ -14,7 +14,9 @@ projectsThree.forEach((branch) => {
     let projectFind = getProjects().find(
       (p) => p.fullName === branch.textContent,
     );
-    updateProjectDetails(projectFind);
+    if (projectFind) {
+      updateProjectDetails(projectFind);
+    }
   });
 });
 

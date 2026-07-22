@@ -1,27 +1,26 @@
+@media (max-width: 660px) {
+  .hero-content{
+    grid-template-columns: 1fr 1fr;
+
+    span, p {
+      z-index: 1;
+    }
+
+  }
+  
+  .hero-image{
+    position: absolute;
+    width: 30rem;
+  }
+}
+
 @media (max-width: 768px) {
-  .hero-content {
-    grid-template-columns: auto;
-    place-items: end center;
-  }
-
-  .hero-image {
-    order: 1;
-  }
-
   .footer.hero-footer {
     bottom: 0%;
     height: auto;
   }
   .hero-footer-content {
     padding: 0.35rem 5%;
-  }
-
-  .hero-info {
-    order: 0;
-  }
-
-  .hero-description {
-    order: 0;
   }
 
   .projects-content {
