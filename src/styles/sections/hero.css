@@ -1,6 +1,7 @@
 #hero {
   overflow: hidden;
   position: relative;
+  max-width: 1440px;
   height: 100vh;
   background-color: #1b1e23;
 
@@ -22,89 +23,78 @@
   position: absolute;
   top: 3rem;
   left: 3rem;
+  font-size: clamp(1.2rem, 2vw, var(--font-size-smtext));
 }
 
 .profile-load {
   position: absolute;
-  font-size: var(--font-size-smtext);
+  font-size: clamp(1.2rem, 2vw, var(--font-size-smtext));
   top: 7%;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .hero-content {
-  display: flex;
-  align-items: center;
-  height: 90%;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  place-items: center ;
+  height: 100%;
+  width: 100%;
 }
 
 .hero-info {
   display: flex;
   flex-direction: column;
-  width: 30%;
-  font-weight: 400;
-  font-size: clamp(var(--font-size-smtext), 3vw, var(--font-size-text));
+  width: clamp(15rem, 20vw, 30rem);
+  font-size: clamp(var(--font-size-smtext), 2vw, var(--font-size-text));
   font-style: normal;
   gap: 2rem;
-
 }
 
 .hero-description {
   display: flex;
   flex-direction: column;
-  max-width: 15vw;
+  width: clamp(15rem, 20vw, 30rem);
   gap: 2rem;
   font-size: clamp(var(--font-size-smtext), 2vw, var(--font-size-text));
-
 }
 
-.hero-background {
-  position: absolute;
-  z-index: 0;
-  font-family: var(--font-primary);
-  font-size: 15vw;
-  line-height: 1;
-  white-space: none;
-
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, -50%) scaleY(clamp(5, 5, 6));
-  opacity: 0.15;
+.hero-image {
+  align-self: end;
+  width: clamp(35rem, 45vw, 40rem);
+  display: flex;
+  justify-content: flex-end;
 }
 
-.hero-image { 
-  position: absolute;
-  z-index: 0;
-  bottom: clamp(0rem,1vw,-1rem);
-  width: clamp(50rem,60vw,70rem);
+.hero-image img {
+  display: inline;
+  width: auto;
+  height: auto;
 }
-
-.hero-image::before{
+/* .hero-image::before {
   position: absolute;
   display: inline-block;
   content: '';
   background-image: url(/src/assets/images/image-removebg-preview\ 1.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 80rem;
-  height: 80rem;
+  width: clamp(50rem,55vw, 80rem);
+  height: clamp(50rem,55vw, 80rem);
   top: -5rem;
   left: -5rem;
   z-index: -1;
-}
-.hero-image::after{
+} */
+/* 
+.hero-image::after {
   position: absolute;
   display: inline-block;
   content: '';
   background-image: url(/src/assets/images/image-removebg-preview\ 1\ \(1\).png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 72rem;
-  height: 72rem;
+  width: clamp(42rem,55vw, 72rem);
+  height: clamp(42rem,55vw, 72rem);
   top: -0.8rem;
   left: -1rem;
   z-index: -1;
-}
-
+} */

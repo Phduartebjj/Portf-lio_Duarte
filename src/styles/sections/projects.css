@@ -1,0 +1,124 @@
+#projects {
+  max-width: 1440px;
+}
+
+.projects-interface {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.projects-content {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  gap: clamp(2rem, 10vw, 40rem);
+  padding: clamp(1rem, 10vw, 2rem);
+}
+
+.projects-tree ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: var(--font-size-subtitle);
+  position: relative;
+  padding: 0rem 2rem;
+
+  li {
+    position: relative;
+  }
+}
+
+.projects-tree ul::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 2rem;
+  width: 4px;
+  background-color: var(--text-primary);
+}
+
+.projects-tree ul li::before {
+  content: "";
+  position: absolute;
+  width: 2.4rem;
+  top: 41%;
+  left: -20px;
+  height: 4px;
+  background-color: var(--text-primary);
+}
+
+.projects-tree ul li:hover {
+  display: inline;
+  text-shadow:
+    0 0 4px #fff,
+    0 0 10px var(--accent),
+    0 0 20px var(--accent),
+    0 0 40px var(--accent),
+    0 0 80px var(--accent),
+    0 0 120px var(--accent),
+    0 0 160px var(--accent);
+  cursor: pointer;
+}
+
+.projects-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.project-info {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: var(--font-size-smtext);
+}
+
+.project-image {
+  width: clamp(32rem, 50vw, 50rem);
+  height: clamp(20rem, 50vw, 30rem);
+  position: relative;
+}
+
+.project-photo {
+  width: 200%;
+  height: 200%;
+  object-fit: cover;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+}
+
+.project-description {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.project-git {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.project-git:hover .project-photo {
+  filter: brightness(0.5);
+}
+
+.project-git:hover .project-description {
+  transition: opacity 0.7s ease;
+  opacity: 1;
+  z-index: 10;
+  font-size: var(--font-size-smtext);
+  padding-top: clamp(3rem, 5vw, 5rem);
+  padding-left: clamp(3rem, 5vw, 5rem);
+  padding-right: clamp(3rem, 5vw, 5rem);
+  padding-bottom: clamp(3rem, 5vw, 5rem);
+}
