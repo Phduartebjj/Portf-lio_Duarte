@@ -7,7 +7,7 @@ export function initPortfolio() {
   const btnSendMessage = document.getElementById("btn-send-message");
   btnSendMessage.addEventListener("click", contactMessage);
   projectsThree.forEach((branch) => {
-    branch.addEventListener("click", (e) => {
+    branch.addEventListener("click", () => {
       let projectFind = getProjects().find(
         (p) => p.fullName === branch.textContent,
       );

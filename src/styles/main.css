@@ -2,12 +2,6 @@
 @import url(fonts.css);
 @import url(variables.css);
 @import url(base.css);
-@import url(components/effects.css);
-@import url(sections/hero.css);
-@import url(components/footer.css);
-@import url(components/aside-bar.css);
-@import url(components/card.css);
-@import url(sections/skills.css);
-@import url(sections/projects.css);
-@import url(sections/contact.css);
+@import url(components.css);
+@import url(sections.css);
 @import url(responsive.css);

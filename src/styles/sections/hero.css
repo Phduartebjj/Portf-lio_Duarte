@@ -64,7 +64,7 @@
   align-self: end;
   width: clamp(40rem, 45vw, 50rem);
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .hero-image img {
