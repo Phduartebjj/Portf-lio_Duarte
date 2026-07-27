@@ -1,7 +1,7 @@
 .nav-bar {
     position: fixed;
     top: 40vh;
-    left: 1rem;
+    left: 8vw;
     border-radius: 2rem;
     z-index: 10;
     height: 25rem;
@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    max-width: 1440px;
     img {
         width: 3rem;
         object-fit: contain;
