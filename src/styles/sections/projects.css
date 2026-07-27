@@ -112,7 +112,7 @@
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
-  word-break: break-all;
+  word-break: keep-all;
   overflow-wrap: break-word;
 }
 
@@ -121,7 +121,7 @@
   overflow: hidden;
 }
 
-.project-git:hover .project-photo {
+.project-git:hover .project-frame {
   filter: brightness(0.5);
 }
 
