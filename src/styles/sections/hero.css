@@ -62,13 +62,12 @@
 
 .hero-image {
   align-self: end;
-  width: clamp(40rem, 45vw, 50rem);
+  width: clamp(40rem, 40vw, 55rem);
   display: flex;
   justify-content: center;
 }
 
 .hero-image img {
-  display: inline;
   width: 100%;
   height: auto;
 }
