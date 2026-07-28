@@ -1,5 +1,3 @@
-import { isFill, haveAProject } from "./validation.js";
-
 function showProjects(projectsThree, projectsList) {
   projectsList.forEach((project) => {
     if (haveAProject(projectsThree, project.name)) {
@@ -26,6 +24,14 @@ function updateProjectDetails(project) {
   projectDescription.textContent = project.description;
   paragraphsInfos[0].textContent = `>PATH: ${project.path}`;
   paragraphsInfos[1].textContent = `>STACK: ${project.stack}`;
+}
+
+function isFill(p) {
+  return p.textContent.trim() !== ">";
+}
+
+function haveAProject(array, projectName) {
+  return array.some((e) => e.textContent.includes(projectName));
 }
 
 export { showProjects, updateProjectDetails };
