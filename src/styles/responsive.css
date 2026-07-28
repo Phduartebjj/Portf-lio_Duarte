@@ -1,4 +1,3 @@
-
 @media (max-width: 1024px) {
   .projects-content {
     flex-direction: column;
@@ -30,6 +29,10 @@
 
   .skills-container .skills-card {
     height: auto;
+  }
+
+  .projects-tree {
+    padding: 0 clamp(5rem, 20vw, 15rem) 0 0;
   }
 }
 

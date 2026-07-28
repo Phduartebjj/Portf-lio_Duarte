@@ -14,7 +14,7 @@
   justify-content: center;
   height: 100%;
   gap: clamp(1rem, 10vw, 40rem);
-  padding: clamp(1rem, 10vw, 2rem);
+  padding: clamp(1rem, 2vw, 2rem) clamp(1rem, 5vw, 4rem) ;
 }
 
 .projects-tree ul {
@@ -70,7 +70,6 @@
   justify-content: center;
   gap: 4rem;
   min-width: 0;
-  width: 100%;
 }
 
 .project-info {
