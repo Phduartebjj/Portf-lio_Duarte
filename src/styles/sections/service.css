@@ -66,9 +66,13 @@
 }
 .service-options li:hover {
   text-shadow:
-    0 0 5px #fff,
-    0 0 15px var(--accent),
-    0 0 30px var(--accent);
+    0 0 4px #fff,
+    0 0 10px var(--accent),
+    0 0 20px var(--accent),
+    0 0 40px var(--accent),
+    0 0 80px var(--accent),
+    0 0 120px var(--accent),
+    0 0 160px var(--accent);
   cursor: pointer;
   opacity: 1;
 }
@@ -80,7 +84,19 @@
   transform: translateX(-1.5rem);
 }
 
-.selected {
+.service-options li.selected {
+  text-shadow:
+    0 0 4px #fff,
+    0 0 10px var(--accent),
+    0 0 20px var(--accent),
+    0 0 40px var(--accent),
+    0 0 80px var(--accent),
+    0 0 120px var(--accent),
+    0 0 160px var(--accent);
+  opacity: 1;
+}
+
+.service-options li.selected::before{
   position: absolute;
   content: ">";
   font-weight: 900;

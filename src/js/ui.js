@@ -34,4 +34,15 @@ function haveAProject(array, projectName) {
   return array.some((e) => e.textContent.includes(projectName));
 }
 
-export { showProjects, updateProjectDetails };
+function updateServicesDetails(service) {
+  const serviceDescription = document.querySelector(".service-description");
+  const serviceIdeal = document.querySelector(".service-ideal");
+  const serviceDelivery = document.querySelector(".service-delivery");
+  console.log(service)
+  serviceDescription.innerHTML = service.description
+  serviceIdeal.innerHTML = service.ideal
+  serviceDelivery.innerHTML = service.delivery
+
+}
+
+export { showProjects, updateProjectDetails, updateServicesDetails };
