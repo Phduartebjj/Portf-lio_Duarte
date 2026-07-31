@@ -15,7 +15,7 @@
   align-items: center;
 }
 
-.service-start {
+.service-start-options {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -78,7 +78,6 @@
   opacity: 1;
 }
 
-
 .service-options li.selected {
   text-shadow:
     0 0 4px #fff,
@@ -96,4 +95,21 @@
   content: ">";
   font-weight: 900;
   transform: translateX(-1.5rem);
+}
+
+.service-start {
+  opacity: 0.7;
+}
+
+.service-start:hover {
+  text-shadow:
+    0 0 4px #fff,
+    0 0 10px var(--accent),
+    0 0 20px var(--accent),
+    0 0 40px var(--accent),
+    0 0 80px var(--accent),
+    0 0 120px var(--accent),
+    0 0 160px var(--accent);
+  opacity: 1;
+  cursor: pointer;
 }

@@ -52,8 +52,11 @@ export function findServiceSelected(service) {
 
 export function serviceSelected(serviceClicked, services) {
   services.forEach((service) => {
-    if (serviceClicked !== service.getAttribute("data-service")) {
-      
+    if (
+      serviceClicked.getAttribute("data-service") !==
+      service.getAttribute("data-service")
+    ) {
+      serviceClicked.classList.add("selected")
       service.classList.remove("selected");
     }
   });
