@@ -1,3 +1,5 @@
+import { animationServiceGo } from "./animation.js";
+
 export class Service {
   constructor({
     nameService,
@@ -39,10 +41,12 @@ const services = [
   new Service({
     nameService: "landingPage",
     ...servicesData.landingPage,
+    animation: false,
   }),
   new Service({
     nameService: "webBusiness",
     ...servicesData.webBusiness,
+    animation: false,
   }),
 ];
 
@@ -51,13 +55,15 @@ export function findServiceSelected(service) {
 }
 
 export function serviceSelected(serviceClicked, services) {
-  services.forEach((service) => {
-    if (
-      serviceClicked.getAttribute("data-service") !==
-      service.getAttribute("data-service")
-    ) {
-      serviceClicked.classList.add("selected")
+  const dataServiceClicked = serviceClicked.getAttribute("data-service");
+  const indiceServiceClicked = services.indexOf(serviceClicked);
+  services.forEach((service, index) => {
+    const dataService = service.getAttribute("data-service");
+
+    if (dataServiceClicked !== service.getAttribute("data-service")) {
       service.classList.remove("selected");
+      serviceClicked.classList.add("selected");
+      animationServiceGo(dataServiceClicked, indiceServiceClicked, dataService);
     }
   });
 }

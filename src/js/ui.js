@@ -38,10 +38,9 @@ function updateServicesDetails(service) {
   const serviceDescription = document.querySelector(".service-description");
   const serviceIdeal = document.querySelector(".service-ideal");
   const serviceDelivery = document.querySelector(".service-delivery");
-  serviceDescription.innerHTML = service.description
-  serviceIdeal.innerHTML = service.ideal
-  serviceDelivery.innerHTML = service.delivery
-
+  serviceDescription.innerHTML = service.description;
+  serviceIdeal.innerHTML = service.ideal;
+  serviceDelivery.innerHTML = service.delivery;
 }
 
 export { showProjects, updateProjectDetails, updateServicesDetails };

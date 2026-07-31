@@ -12,7 +12,7 @@ export function initPortfolio() {
     document.querySelectorAll("[data-service]"),
   );
 
-  servicesOptions.forEach((option) => {
+  servicesOptions.forEach((option, indice) => {
     option.addEventListener("click", () => {
       const service = option.getAttribute("data-service");
       serviceSelected(option, servicesOptions);
@@ -21,7 +21,6 @@ export function initPortfolio() {
   });
 
   const projectsThree = Array.from(document.querySelectorAll(".project"));
-  console.log(projectsThree);
   projectsThree.forEach((branch) => {
     branch.addEventListener("click", () => {
       let projectFind = getProjects().find(
