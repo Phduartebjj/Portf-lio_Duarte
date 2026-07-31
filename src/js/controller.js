@@ -15,7 +15,7 @@ export function initPortfolio() {
   servicesOptions.forEach((option) => {
     option.addEventListener("click", () => {
       const service = option.getAttribute("data-service");
-      serviceSelected(service,servicesOptions)
+      serviceSelected(option, servicesOptions);
       updateServicesDetails(findServiceSelected(service));
     });
   });

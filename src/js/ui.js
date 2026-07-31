@@ -38,7 +38,6 @@ function updateServicesDetails(service) {
   const serviceDescription = document.querySelector(".service-description");
   const serviceIdeal = document.querySelector(".service-ideal");
   const serviceDelivery = document.querySelector(".service-delivery");
-  console.log(service)
   serviceDescription.innerHTML = service.description
   serviceIdeal.innerHTML = service.ideal
   serviceDelivery.innerHTML = service.delivery
