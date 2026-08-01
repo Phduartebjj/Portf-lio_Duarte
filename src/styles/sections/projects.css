@@ -90,7 +90,7 @@
 }
 
 .project-image {
-  width: clamp(32rem, 50vw, 50rem);
+  width: clamp(31rem, 50vw, 50rem);
   height: clamp(20rem, 50vw, 30rem);
   position: relative;
 }
