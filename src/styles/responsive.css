@@ -46,8 +46,15 @@
     height: 5rem;
     flex-direction: row;
     justify-content: space-evenly;
-    box-sizing: border-box;
     padding: 0 1rem;
+  }
+
+  .nav-bar p {
+    display: none;
+  }
+
+  .nav-bar:hover p {
+    display: none;
   }
 }
 
