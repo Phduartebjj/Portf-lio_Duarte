@@ -2,7 +2,6 @@ export function contactMessage() {
   const messageBox = document.getElementById("contact-message");
 
   const message = messageBox.value.trim();
-  console.log(message);
   sendMessage(message, messageBox);
 }
 

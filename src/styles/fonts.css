@@ -1,19 +1,10 @@
 @font-face {
-  font-family: "Courier Prime";
+  font-family: "JetBrains";
   font-display: swap;
-  src: url("../assets/fonts/Courier_Prime/CourierPrime-Regular.woff2")
+  src: url("../assets/fonts/JetBrains/JetBrainsMono-VariableFont_wght.woff2")
     format("woff2");
-  font-weight: 400;
+  font-weight: 100 900;
   font-style: normal;
-}
-
-@font-face {
-  font-family: "Courier Prime";
-  src: url("../assets/fonts/Courier_Prime/CourierPrime-Bold.woff2")
-    format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
 }
 
 @font-face {

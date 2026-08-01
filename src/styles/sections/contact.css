@@ -1,6 +1,7 @@
-#contact{
+#contact {
   max-width: 1440px;
-
+  height: 100%;
+  padding-bottom: clamp(1rem, 5vh, 4rem);
 }
 
 .contact-interface {
@@ -8,7 +9,6 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .contact-card {
@@ -37,7 +37,24 @@
   height: 100%;
   font-size: var(--font-size-smtext);
 }
+.card-content.contact-content a {
+  opacity: 0.7;
+}
 
-.btn-send-message img{
-  width: 2.4rem;height: 2.4rem;
+.card-content.contact-content a:hover {
+  text-shadow:
+    0 0 4px #fff,
+    0 0 10px var(--accent),
+    0 0 20px var(--accent),
+    0 0 40px var(--accent),
+    0 0 80px var(--accent),
+    0 0 120px var(--accent),
+    0 0 160px var(--accent);
+  cursor: pointer;
+  opacity: 1;
+}
+
+.btn-send-message img {
+  width: 2.4rem;
+  height: 2.4rem;
 }

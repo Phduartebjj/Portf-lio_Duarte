@@ -1,12 +1,11 @@
 .services {
   width: 100%;
-  height: 100vh;
+  min-height: 100%;
   display: flex;
   max-width: 1440px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
   flex-direction: column;
   gap: clamp(1rem, 2vw, 3rem);
-  height: 100vh;
+  padding-bottom: clamp(1rem,5vh,4rem);
 }
 
 .service-container {
@@ -25,24 +24,24 @@
   font-size: var(--font-size-smtext);
 }
 
-.service-card {
-  width: clamp(30rem, 90vw, 70rem);
-  height: 47rem;
-  border: 1px solid var(--accent);
-  border-radius: 2rem;
-  background-color: rgba(58, 85, 120, 0.1);
-}
-
 .card-content-service {
   display: flex;
   padding: clamp(1rem, 2vw, 3rem);
   gap: clamp(1rem, 5vw, 5rem);
   min-width: 100%;
-  height: 100%;
+  max-height: 100%
+}
+
+.service-card {
+  width: clamp(30rem, 90vw, 70rem);
+  height: auto;
+  border: 1px solid var(--accent);
+  border-radius: 2rem;
+  background-color: rgba(58, 85, 120, 0.1);
 }
 
 .service-frame {
-  width: 30rem;
+  width: clamp(28rem, 80vw, 30rem);
   height: 20rem;
 }
 

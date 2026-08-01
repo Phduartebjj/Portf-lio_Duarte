@@ -93,6 +93,14 @@
 }
 
 @media (max-width: 660px) {
+  .card-content-aboutMe {
+    flex-direction: column;
+  }
+
+  .right-card-aboutMe {
+    width: 100%;
+  }
+
   .hero-content {
     grid-template-columns: 1fr 1fr;
 

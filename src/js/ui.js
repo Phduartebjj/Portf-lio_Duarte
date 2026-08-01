@@ -40,7 +40,7 @@ function updateServicesDetails(service) {
   const serviceDelivery = document.querySelector(".service-delivery");
   serviceIdeal.replaceChildren();
   serviceDelivery.replaceChildren();
-  
+
   service.delivery.forEach((delivery) => {
     const li = document.createElement("li");
     li.textContent = delivery;
