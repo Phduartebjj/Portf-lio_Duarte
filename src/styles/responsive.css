@@ -65,6 +65,7 @@
   .services-info {
     flex-direction: column;
     order: 1;
+    align-items: center;
     height: 100%;
     width: 100%;
   }
