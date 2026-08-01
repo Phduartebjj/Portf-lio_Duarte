@@ -1,6 +1,7 @@
 html {
   font-size: 62.5%;
-  min-width: 100vw;
+  width: 100%;
+  overflow-x: hidden;
   scrollbar-width: thin;
   scrollbar-color: var(--text-primary) var(--bg-primary);
 }
@@ -8,9 +9,7 @@ html {
 body {
   background: var(--bg-primary);
   color: var(--text-primary);
-
   font-family: var(--font-code);
-
   overflow-x: hidden;
 }
 

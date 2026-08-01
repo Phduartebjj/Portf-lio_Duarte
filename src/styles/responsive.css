@@ -32,18 +32,22 @@
   }
 
   .projects-tree {
-    padding: 0 clamp(5rem, 20vw, 15rem) 0 0;
+    padding: 0;
   }
-}
 
-@media (max-width: 768px) {
   .nav-bar {
-    width: 25rem;
-    height: 5rem;
-    flex-direction: row;
-    top: 80vh;
+    top: auto;
+    bottom: 5.5rem;
+    bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
     left: 50%;
     transform: translateX(-50%);
+    width: min(25rem, 85vw);
+    max-width: calc(100vw - 2rem);
+    height: 5rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 0 1rem;
   }
 }
 
@@ -98,7 +102,7 @@
 
   .hero-image {
     position: absolute;
-    width: 30rem;
+    width: min(30rem, 90vw);
   }
 }
 
