@@ -1,8 +1,8 @@
 @font-face {
   font-family: "JetBrains";
   font-display: swap;
-  src: url("../assets/fonts/JetBrains/JetBrainsMono-VariableFont_wght.woff2")
-    format("woff2");
+  src: url("../assets/fonts/JetBrains/JetBrainsMono-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
