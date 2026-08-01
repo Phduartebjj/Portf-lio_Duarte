@@ -38,9 +38,22 @@ function updateServicesDetails(service) {
   const serviceDescription = document.querySelector(".service-description");
   const serviceIdeal = document.querySelector(".service-ideal");
   const serviceDelivery = document.querySelector(".service-delivery");
+  serviceIdeal.replaceChildren();
+  serviceDelivery.replaceChildren();
+  
+  service.delivery.forEach((delivery) => {
+    const li = document.createElement("li");
+    li.textContent = delivery;
+    serviceDelivery.appendChild(li);
+  });
+
+  service.ideal.forEach((ideal) => {
+    const li = document.createElement("li");
+    li.textContent = ideal;
+    serviceIdeal.appendChild(li);
+  });
+
   serviceDescription.innerHTML = service.description;
-  serviceIdeal.innerHTML = service.ideal;
-  serviceDelivery.innerHTML = service.delivery;
 }
 
 export { showProjects, updateProjectDetails, updateServicesDetails };

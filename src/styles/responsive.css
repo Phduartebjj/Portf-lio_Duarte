@@ -48,6 +48,44 @@
 }
 
 @media (max-width: 660px) {
+  .service-card {
+    height: 100%;
+  }
+  .card-content-service {
+    flex-direction: column;
+  }
+  .service-options {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4rem;
+    gap: 2rem;
+    padding-left: 1.5rem;
+  }
+
+  .services-info {
+    flex-direction: column;
+    order: 1;
+    height: 100%;
+    width: 100%;
+  }
+  .service-description {
+    word-break: keep-all;
+    font-size: 1.4rem;
+  }
+  .service-delivery {
+    order: -1;
+  }
+
+  .service-info-text ul {
+    gap: 0.4rem;
+    font-size: 1.2rem;
+  }
+
+  .service-info-category {
+    display: flex;
+    flex-direction: row;
+  }
+
   .hero-content {
     grid-template-columns: 1fr 1fr;
 
