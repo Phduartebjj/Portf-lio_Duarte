@@ -51,7 +51,7 @@
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 768px) {
   .service-card {
     height: 100%;
   }
@@ -90,7 +90,9 @@
     display: flex;
     flex-direction: row;
   }
+}
 
+@media (max-width: 660px) {
   .hero-content {
     grid-template-columns: 1fr 1fr;
 

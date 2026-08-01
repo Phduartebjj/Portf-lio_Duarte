@@ -55,7 +55,7 @@
 }
 
 .service-options {
-  font-size: clamp(var(--font-size-smtext), 2vw, 2rem);
+  font-size: clamp(var(--font-size-smtext), 3vw, 2rem);
   display: inline;
   width: fit-content;
 }
