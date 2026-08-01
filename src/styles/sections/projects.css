@@ -14,10 +14,11 @@
   justify-content: center;
   height: 100%;
   gap: clamp(1rem, 10vw, 40rem);
-  padding: clamp(1rem, 2vw, 2rem) clamp(1rem, 5vw, 4rem) ;
+  padding: clamp(1rem, 2vw, 2rem) clamp(1rem, 5vw, 4rem);
 }
 
 .projects-tree ul {
+
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -44,7 +45,7 @@
   content: "";
   position: absolute;
   width: 2.4rem;
-  top: 41%;
+  top: 44%;
   left: -20px;
   height: 4px;
   background-color: var(--text-primary);
@@ -63,7 +64,7 @@
   cursor: pointer;
 }
 
-.project-details{
+.project-details {
   display: flex;
   flex-direction: column;
   align-items: center;

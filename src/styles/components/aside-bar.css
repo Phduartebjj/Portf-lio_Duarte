@@ -35,6 +35,7 @@
 }
 
 .nav-bar:hover {
+  transition: all 1s ease ;
   width: max-content;
 }
 .nav-bar:hover a {
