@@ -129,6 +129,10 @@
     position: absolute;
     width: min(30rem, 90vw);
   }
+
+  .service-info-text {
+    padding: clamp(1rem, 2vw, 3rem);
+  }
 }
 
 @media (min-width: 1440px) {
