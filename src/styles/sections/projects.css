@@ -135,4 +135,5 @@
 
 .project {
   font-size: clamp(var(--font-size-text), 5vw, var(--font-size-subtitle));
+  width: fit-content;
 }
